@@ -1,0 +1,13 @@
+C:\Users\Temelakiev\Documents\Visual Studio 2017\Projects\LearningSystem\LearningSystem.Services\bin\Debug\netstandard2.0\LearningSystem.Services.deps.json
+C:\Users\Temelakiev\Documents\Visual Studio 2017\Projects\LearningSystem\LearningSystem.Services\bin\Debug\netstandard2.0\LearningSystem.Services.dll
+C:\Users\Temelakiev\Documents\Visual Studio 2017\Projects\LearningSystem\LearningSystem.Services\obj\Debug\netstandard2.0\LearningSystem.Services.csproj.CoreCompileInputs.cache
+C:\Users\Temelakiev\Documents\Visual Studio 2017\Projects\LearningSystem\LearningSystem.Services\obj\Debug\netstandard2.0\LearningSystem.Services.AssemblyInfoInputs.cache
+C:\Users\Temelakiev\Documents\Visual Studio 2017\Projects\LearningSystem\LearningSystem.Services\obj\Debug\netstandard2.0\LearningSystem.Services.AssemblyInfo.cs
+C:\Users\Temelakiev\Documents\Visual Studio 2017\Projects\LearningSystem\LearningSystem.Services\obj\Debug\netstandard2.0\LearningSystem.Services.csprojResolveAssemblyReference.cache
+C:\Users\Temelakiev\Documents\Visual Studio 2017\Projects\LearningSystem\LearningSystem.Services\bin\Debug\netstandard2.0\LearningSystem.Services.pdb
+C:\Users\Temelakiev\Documents\Visual Studio 2017\Projects\LearningSystem\LearningSystem.Services\bin\Debug\netstandard2.0\LearningSystem.Common.dll
+C:\Users\Temelakiev\Documents\Visual Studio 2017\Projects\LearningSystem\LearningSystem.Services\bin\Debug\netstandard2.0\LearningSystem.Data.dll
+C:\Users\Temelakiev\Documents\Visual Studio 2017\Projects\LearningSystem\LearningSystem.Services\bin\Debug\netstandard2.0\LearningSystem.Common.pdb
+C:\Users\Temelakiev\Documents\Visual Studio 2017\Projects\LearningSystem\LearningSystem.Services\bin\Debug\netstandard2.0\LearningSystem.Data.pdb
+C:\Users\Temelakiev\Documents\Visual Studio 2017\Projects\LearningSystem\LearningSystem.Services\obj\Debug\netstandard2.0\LearningSystem.Services.dll
+C:\Users\Temelakiev\Documents\Visual Studio 2017\Projects\LearningSystem\LearningSystem.Services\obj\Debug\netstandard2.0\LearningSystem.Services.pdb
