@@ -54,6 +54,8 @@ namespace LearningSystem.Web.Controllers
             {
                 Username = user.UserName,
                 Email = user.Email,
+                Name=user.Name,
+                Birthdate=user.Birthdate,
                 PhoneNumber = user.PhoneNumber,
                 IsEmailConfirmed = user.EmailConfirmed,
                 StatusMessage = StatusMessage
@@ -95,6 +97,24 @@ namespace LearningSystem.Web.Controllers
                 {
                     throw new ApplicationException($"Unexpected error occurred setting phone number for user with ID '{user.Id}'.");
                 }
+            }
+
+            var nameIsChanged = model.Name != user.Name;
+            var birthdayIsChanged = model.Birthdate != user.Birthdate;
+
+            if (nameIsChanged)
+            {
+                user.Name = model.Name;
+            }
+
+            if (birthdayIsChanged)
+            {
+                user.Birthdate = model.Birthdate;
+            }
+
+            if (nameIsChanged || birthdayIsChanged)
+            {
+                await this._userManager.UpdateAsync(user);
             }
 
             StatusMessage = "Your profile has been updated";

@@ -8,6 +8,13 @@
 
 <h3>@Model.Name - @Model.Birthdate.ToShortDateString()</h3>
 
+@if (Model.UserName == User.Identity.Name)
+{
+    <a asp-controller="Manage" asp-action="Index" class="btn btn-default">Edit Profile</a>
+    <br />
+    <br />
+}
+
 <table class="table table-bordered table-hover">
     <thead>
         <tr>

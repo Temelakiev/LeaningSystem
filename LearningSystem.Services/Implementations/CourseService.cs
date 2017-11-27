@@ -28,11 +28,11 @@ namespace LearningSystem.Services.Implementations
             .ProjectTo<CourseListingServiceModel>()
             .ToListAsync();
 
-        public async Task<CourseDetailsServiceModel> ByIdAsync(int id)
+        public async Task<TModel> ByIdAsync<TModel>(int id) where TModel : class
             => await this.db
             .Courses
             .Where(c => c.Id == id)
-            .ProjectTo<CourseDetailsServiceModel>()
+            .ProjectTo<TModel>()
             .FirstOrDefaultAsync();
 
         public async Task<bool> SignOutUser(int courseId, string userId)
