@@ -44,6 +44,8 @@ namespace LearningSystem.Web.Areas.Blog.Controllers
         public async Task<IActionResult> Details(int id)
             => View(await this.articles.ById(id));
 
+      
+
         [HttpPost]
         public async Task<IActionResult> Create(PublishArticleFormModel model)
         {

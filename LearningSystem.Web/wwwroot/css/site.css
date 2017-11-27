@@ -41,3 +41,7 @@
 .pagination li.disabled{
     pointer-events:none;
 }
+
+.home-jubmotron{
+    margin-top:50px;
+}
