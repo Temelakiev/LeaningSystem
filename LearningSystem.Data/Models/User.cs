@@ -9,7 +9,6 @@ namespace LearningSystem.Data.Models
 {
     public class User : IdentityUser
     {
-        [Required]
         [MinLength(2)]
         [MaxLength(100)]
         public string Name { get; set; }
