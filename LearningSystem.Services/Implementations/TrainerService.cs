@@ -43,6 +43,10 @@ namespace LearningSystem.Services.Implementations
             .ProjectTo<CourseListingServiceModel>()
             .ToListAsync();
 
+        public async Task<byte[]> GetExamSubmission(int id, string studentId)
+            =>  (await this.db.FindAsync<StudentCourse>(id, studentId))
+                ?.ExamSubmission;
+
         public async Task<bool> IsTrainer(int courseId, string trainerId)
             => await this.db
             .Courses
@@ -56,5 +60,28 @@ namespace LearningSystem.Services.Implementations
             .SelectMany(c => c.Students.Select(s => s.Student))
             .ProjectTo<StudentInCourseServiceModel>(new { courseId })
             .ToListAsync();
+
+        public async Task<StudentInCourseNamesServiceModel> StudentInCourseNamesAsync(int courseId,string studentId)
+        {
+            var username = await this.db.Users.Where(u => u.Id == studentId).Select(u => u.UserName).FirstOrDefaultAsync();
+
+            if (username == null)
+            {
+                return null;
+            }
+
+            var courseName = await this.db.Courses.Where(c => c.Id == courseId).Select(c => c.Name).FirstOrDefaultAsync();
+
+            if (courseName == null)
+            {
+                return null;
+            }
+
+            return new StudentInCourseNamesServiceModel
+            {
+                Username=username,
+                CourseTitle=courseName
+            };
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace LearningSystem.Data.Models
@@ -15,5 +16,8 @@ namespace LearningSystem.Data.Models
         public Course Course { get; set; }
 
         public Grade? Grade { get; set; }
+
+        [MaxLength(2 * 1024 * 1024)]
+        public byte[] ExamSubmission { get; set; }
     }
 }

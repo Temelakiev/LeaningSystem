@@ -20,5 +20,6 @@ namespace LearningSystem.Services
 
         Task<bool> SignOutUser(int courseId, string userId);
 
+        Task<bool> SaveExamSubmission(int id, string userId, byte[] fileContents);
     }
 }

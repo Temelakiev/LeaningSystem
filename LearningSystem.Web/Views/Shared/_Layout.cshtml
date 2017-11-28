@@ -60,6 +60,13 @@
             </div>
         }
 
+        @if (TempData.ContainsKey(WebConstants.TempDataErrorMessageKey))
+        {
+            <div class="alert alert-danger">
+                @TempData[WebConstants.TempDataErrorMessageKey]
+            </div>
+        }
+
         @RenderBody()
         <hr />
         <footer>

@@ -12,6 +12,7 @@ namespace LearningSystem.Web
         public const string TrainerRole = "Trainer";
 
         public const string TempDataSuccessMessageKey = "SuccessMessage";
+        public const string TempDataErrorMessageKey = "ErrorMessage";
 
         public const string BlogArea = "Blog";
     }

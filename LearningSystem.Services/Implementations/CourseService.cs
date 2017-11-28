@@ -47,6 +47,22 @@ namespace LearningSystem.Services.Implementations
             .ToListAsync();
         }
 
+        public async Task<bool> SaveExamSubmission(int id, string userId, byte[] fileContents)
+        {
+            var studentInCourse = await this.db.FindAsync<StudentCourse>(id, userId);
+
+            if (studentInCourse==null)
+            {
+                return false;
+            }
+
+            studentInCourse.ExamSubmission = fileContents;
+
+            await this.db.SaveChangesAsync();
+
+            return true;
+        }
+
         public async Task<bool> SignOutUser(int courseId, string userId)
         {
             var courseInfo = await this.GetCourseInfo(courseId, userId);
