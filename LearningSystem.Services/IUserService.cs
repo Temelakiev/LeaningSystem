@@ -11,5 +11,7 @@ namespace LearningSystem.Services
         Task<UserProfileServiceModel> ProfileAsync(string id);
 
         Task<IEnumerable<UserListingServiceModel>> FindAsync(string searchText);
+
+        Task<byte[]> GetPdfCertificate(int id,string studentId);
     }
 }
